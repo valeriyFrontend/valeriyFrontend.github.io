@@ -1,4 +1,9 @@
 @media (max-width: 992px) {
+    .about {
+        &__container {
+            flex-direction: column-reverse;
+        }
+    }
     .contacts {
         &__contacts-wrap {
             width: 100%;
@@ -11,9 +16,5 @@
 }
 
 @media (max-width: 576px) {
-    .about {
-        &__container {
-            flex-direction: column-reverse;
-        }
-    }
+    
 }
