@@ -11,7 +11,7 @@ gulp.task('server', function() {
 
     browserSync({
         server: {
-            baseDir: "dist"
+            baseDir: "./"
         }
     });
 
@@ -36,7 +36,7 @@ gulp.task('watch', function() {
 gulp.task('html', function () {
     return gulp.src("src/*.html")
         .pipe(htmlmin({ collapseWhitespace: true }))
-        .pipe(gulp.dest("dist/"));
+        .pipe(gulp.dest("./"));
 });
 
 gulp.task('scripts', function () {
