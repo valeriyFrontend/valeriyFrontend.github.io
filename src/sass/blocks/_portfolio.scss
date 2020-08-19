@@ -1,8 +1,12 @@
 .portfolio {
-    margin-top: 100px;
+    margin-top: 50px;
+    padding: 50px 0;
+
+    background-color: #fff;
     &__title {
-        font-size: 40px;
+        font-size: 35px;
         text-align: center;
+        text-transform: uppercase;
     }
     &__sub-title {
         display: block;
@@ -14,7 +18,7 @@
     }
     &__galery {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-wrap: wrap;
 
         margin-top: 50px;
@@ -24,7 +28,7 @@
         height: 390px;
         margin-top: 25px;
 
-        border: 1px rgb(119, 119, 119) solid;
+        border: 1px rgb(180, 180, 180) solid;
         overflow: hidden;
     }
     &__item {
@@ -37,6 +41,7 @@
         &:hover {
             margin-top: -80px;
 
+            opacity: .9;
             overflow: visible;
         }
         img {

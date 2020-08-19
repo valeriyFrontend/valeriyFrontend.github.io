@@ -1,6 +1,12 @@
 .about {
+    margin-top: 50px;
+    &__title {
+        font-size: 35px;
+        font-weight: 800;
+        color: #000;
+    }
     &__text {
-        font-size: 17px;
+        font-size: 15px;
         color: #777777;
         line-height: 30px;
         font-family: 'Montserrat', sans-serif;
@@ -14,10 +20,9 @@
         flex-direction: column;
     }
     &__photo {
-        height: 400px;
-        margin-top: 25px;
+        padding: 10px;
 
-        box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px -1px rgba(0,0,0,0.3);
+        border: 1px solid #b4b4b4;
 
         overflow: hidden;
         img {
@@ -25,30 +30,29 @@
         }
     }
     &__descr {
-        font-size: 17px;
+        font-size: 16px;
         color: #777777;
         line-height: 30px;
         font-family: 'Montserrat', sans-serif;
 
         width: 100%;
-        margin: 25px 0 0 25px;
+        margin-right: 30px;
     }
     &__list {
         margin-top: 50px;
         
         border: 1px solid #e0e0e0;
+        border-radius: 3px;
         li {
             font-size: 14px;
             color: #333;
 
-            padding: 10px 20px;
+            padding: 20px 20px;
 
             border-bottom: 1px solid #e0e0e0;
         }
         span {
             display: inline-block;
-            
-            font-weight: 600;
 
             min-width: 125px;
         }

@@ -9,6 +9,7 @@
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 li {
     list-style-type: none;
@@ -16,4 +17,7 @@ li {
 
 @import 'blocks/header';
 @import 'blocks/about';
+@import 'blocks/skills';
 @import 'blocks/portfolio';
+@import 'blocks/contacts';
+@import 'blocks/footer';
