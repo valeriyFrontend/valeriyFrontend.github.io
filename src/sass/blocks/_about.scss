@@ -6,10 +6,9 @@
         color: #000;
     }
     &__text {
-        font-size: 15px;
+        font-size: 18px;
         color: #777777;
         line-height: 30px;
-        font-family: 'Montserrat', sans-serif;
     }
     &__container {
         display: flex;
@@ -30,10 +29,11 @@
         }
     }
     &__descr {
-        font-size: 16px;
+        font-size: 18px;
         color: #777777;
         line-height: 30px;
         font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
 
         width: 100%;
         margin-right: 30px;
@@ -44,7 +44,7 @@
         border: 1px solid #e0e0e0;
         border-radius: 3px;
         li {
-            font-size: 14px;
+            font-size: 16px;
             color: #333;
 
             padding: 20px 20px;

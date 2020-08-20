@@ -1,0 +1,106 @@
+// #loader {
+//     position: absolute;
+//     left: 50%;
+//     top: 50%;
+//     z-index: 1;
+//     width: 150px;
+//     height: 150px;
+//     margin: -75px 0 0 -75px;
+//     border: 16px solid #f3f3f3;
+//     border-radius: 50%;
+//     border-top: 16px solid #3498db;
+//     width: 120px;
+//     height: 120px;
+//     -webkit-animation: spin 2s linear infinite;
+//     animation: spin 2s linear infinite;
+//   }
+  
+//   @-webkit-keyframes spin {
+//     0% { -webkit-transform: rotate(0deg); }
+//     100% { -webkit-transform: rotate(360deg); }
+//   }
+  
+//   @keyframes spin {
+//     0% { transform: rotate(0deg); }
+//     100% { transform: rotate(360deg); }
+//   }
+  
+//   /* Add animation to "page content" */
+//   .animate-bottom {
+//     position: relative;
+//     -webkit-animation-name: animatebottom;
+//     -webkit-animation-duration: 1s;
+//     animation-name: animatebottom;
+//     animation-duration: 1s
+//   }
+  
+//   @-webkit-keyframes animatebottom {
+//     from { bottom:-100px; opacity:0 } 
+//     to { bottom:0px; opacity:1 }
+//   }
+  
+//   @keyframes animatebottom { 
+//     from{ bottom:-100px; opacity:0 } 
+//     to{ bottom:0; opacity:1 }
+//   }
+
+
+#loader,
+#loader:before,
+#loader:after {
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.6em;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation: load7 1.8s infinite ease-in-out;
+  animation: load7 1.8s infinite ease-in-out;
+}
+#loader {
+  color: #ffffff;
+  font-size: 8px;
+  position: absolute;
+  text-indent: -9999em;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  &:before,
+    &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    }
+    &:before {
+    left: -3.5em;
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+    }
+    &:after {
+    left: 3.5em;
+}
+}
+@-webkit-keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}
+@keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}
