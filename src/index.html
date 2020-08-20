@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
     integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <link rel="stylesheet" href="css/animate.css">
@@ -14,10 +14,14 @@
     <header class="header">
         <div class="header__overlay"></div>
         <div class="header__top">
-            <div class="header__logo">
+            <a class="header__logo" href="#">
                 <img src="img/logo.png" alt="Logo">
-            </div>
+            </a>
             <nav>
+                <input id="header__toggle" type="checkbox" />
+                <label class="header__btn" for="header__toggle">
+                    <span></span>
+                </label>
                 <ul class="header__nav">
                     <li><a href="#">Home</a></li>
                     <li><a class="scroll-about" href="#scroll">About Me</a></li>
@@ -25,6 +29,7 @@
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Testimonial</a></li>
                     <li><a href="#">Contact</a></li>
+                    <li></li>
                 </ul>
             </nav>
         </div>
@@ -129,22 +134,29 @@
     </section>
 
     <section class="contacts container">
-        <div class="contacts__contacts-wrap wow fadeInLeft">
-            <div class="contacts__contacts">
+        <div class="contacts__wrap wow fadeInLeft">
+            <div class="contacts__item">
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
                 <p>
                     <span>Address:</span>
-                    45 BC, Hampden-Sydney College in Virginia
+                    nfo@pippra.com
                 </p>
             </div>
-            <div class="contacts__contacts">
+            <div class="contacts__item">
                 <i class="fa fa-phone" aria-hidden="true"></i>
                 <p>
                     <span>Phone:</span>
                     +123 456 789 000
                 </p>
             </div>
-            <div class="contacts__contacts">
+            <div class="contacts__item">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <p>
+                    <span>Email:</span>
+                    nfo@pippra.com
+                </p>
+            </div>
+            <div class="contacts__item">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
                 <p>
                     <span>Email:</span>

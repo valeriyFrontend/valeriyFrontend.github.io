@@ -1,29 +1,36 @@
 .contacts {
     margin-bottom: 50px;
-    display: flex;
-    justify-content: space-between;
-    &__contacts-wrap {
-        width: 50%;
-        padding-top: 50px;
-
-        box-shadow: 0 0 5px rgb(139, 139, 139);
-    }
-    &__contacts {
+    &__wrap {
         display: flex;
-        align-items: center;
+        justify-content: space-between;
+
+        width: 100%;
+        padding-top: 50px;
+    }
+    &__item {
+        text-align: center;
         color: #333;
 
-        padding: 0 50px 50px;
+        width: 100%;
+        margin: 0 15px;
+        padding: 20px 0;
+
+        box-shadow: 0 20px 40px rgba(0,0,0,.2);
         .fa {
-            font-size: 30px;
+            font-size: 25px;
+            color: #E91E63;
         }
         p {
-            margin-left: 30px;
+            font-weight: 300;
+
+            margin-top: 25px;
         }
         span {
             display: block;
 
-            font-weight: 600;
+            font-size: 16px;
+            font-weight: 500;
+            text-transform: uppercase;
 
             margin-bottom: 10px;
         }
