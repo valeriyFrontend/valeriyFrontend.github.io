@@ -1,0 +1,33 @@
+// Libs
+@import 'libs/fonts';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Cuprum;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+@import 'blocks/category';
+@import 'blocks/header';
+@import 'blocks/services';
+@import 'blocks/about';
+@import 'blocks/manufacturers';
+@import 'blocks/products';
+@import 'blocks/footer';
+@import 'blocks/media';

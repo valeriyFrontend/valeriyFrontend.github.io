@@ -1,0 +1,147 @@
+.footer {
+    position: relative;
+    &__logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 220px;
+        height: 68px;
+        padding-bottom: 5px;
+
+        background: #EE3643;
+        box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+
+        position: absolute;
+        top: 0;
+        &:hover {
+            background: #CA2C37;
+
+            transition: 0.3s;
+        }
+        img {
+            width: 138px;
+        }
+    }
+    &__address {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 24px;
+        color: #F3F7F9;
+
+        margin-top: 40px;
+    }
+    &__top-bg {
+        background: #32425C;
+    }
+    &__top {
+        display: flex;
+        justify-content: space-between;
+
+        padding: 37px 0 80px 0;
+    }
+    &__top-menu {
+        display: flex;
+        justify-content: flex-end;
+        li {
+            margin:0 0 10px 60px;
+        }
+        a {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            color: #F1F5F7;
+            &:hover {
+                text-decoration: underline;
+            }
+            &:active {
+                opacity: .5;
+            }
+        }
+    }
+    &__menu-bottom {
+        display: flex;
+        justify-content: flex-end;
+
+        margin-top: 34px;
+        li {
+            margin:0 0 10px 60px;
+        }
+        a {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            color: #FFD180;
+            &:hover {
+                text-decoration: underline;
+            }
+            &:active {
+                opacity: .5;
+            }
+        }
+    }
+    &__link {
+        display: flex;
+        justify-content: flex-start;
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: 44px;
+            height: 44px;
+            margin-left: 5px;
+            
+            background: linear-gradient(0deg, #212A3A, #212A3A);
+
+            border-radius: 100%;
+            &:hover {
+                background: linear-gradient(0deg, #EE3643, #EE3643);
+            }
+        }
+    }
+    &__bottom-bg {
+        background: #293449;
+    }
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        padding: 34px 0 36px 0;
+    }
+    &__rights {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 18px;
+        color: #FFFFFF;
+    }
+    &__email {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        color: #FFFFFF;
+        a {
+            display: block;
+            color: #FFD180;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    &__site {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        color: #FFFFFF;
+        a {
+            display: block;
+            color: #FFD180;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
