@@ -25,12 +25,16 @@
             width: 35px;
             height: 35px;
 
-            color: rgba(255, 255, 255, .2);
+            // color: rgba(255, 255, 255, .2);
+            opacity: .5;
             text-decoration: none;
             transition: .3s;
             &:hover {
-                color: #fff;
+                opacity: 1;
             }
+        }
+        img {
+            width: 50%;
         }
     }
     p {
