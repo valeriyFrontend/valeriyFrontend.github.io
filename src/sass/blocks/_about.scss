@@ -19,13 +19,15 @@
         flex-direction: column;
     }
     &__photo {
-        padding: 10px;
-
-        border: 1px solid #b4b4b4;
+        display: flex;
 
         overflow: hidden;
         img {
-            width: 100%;
+            width: 60%;
+            padding: 10px;
+            margin: 0 auto;
+
+            border: 1px solid #b4b4b4;
         }
     }
     &__descr {
