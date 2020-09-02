@@ -1,0 +1,10 @@
+.title {
+    font-size: 30px;
+    font-weight: bold;
+    color: $black;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    &_item {
+        color: $white;
+    }
+}

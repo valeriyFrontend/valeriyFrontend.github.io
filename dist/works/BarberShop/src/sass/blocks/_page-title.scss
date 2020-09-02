@@ -1,0 +1,14 @@
+.page {
+    &__title {
+        text-transform: uppercase;
+    }
+    &__nav {
+        display: flex;
+        li {
+            font-weight: 700;
+            font-size: 14px;
+            color: $black;
+            margin-right: 15px;
+        }
+    }
+}

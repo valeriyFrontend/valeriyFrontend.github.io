@@ -1,0 +1,84 @@
+.header {
+    background-color: #000;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__nav {
+        transition-duration: .25s;
+    }
+    &__items{
+        display: flex;
+        justify-content: space-between;
+        a {
+            display: block;
+            
+            font-size: 16px;
+            font-weight: 700;
+            text-decoration: none;
+            color: #fff;
+
+            max-width: 150px;
+            padding: 25px;
+
+            text-decoration: none;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            &:hover {
+                background: rgba(121, 121, 121, 0.63);
+            }
+        }
+    }
+    &__item {
+        transition-duration: .25s;
+    }
+    &__logo {
+        margin-top: 20px;
+        padding: 0 !important;
+    }
+    &__input {
+        display: flex;
+
+        font-size: 16px;
+        font-weight: 700;
+        text-decoration: none;
+        color: #fff;
+        
+        padding: 25px;
+        img {
+            margin-right: 10px;
+        }
+        &:hover {
+            background: rgba(121, 121, 121, 0.63);
+        }
+    }
+
+    #menu__toggle {
+        display: none;
+        &:checked ~ .menu__btn > span {
+            transform: rotate(45deg);
+        }
+        &:checked ~ .menu__btn > span::before {
+            top: 0;
+            transform: rotate(0);
+        }
+        &:checked ~ .menu__btn > span::after {
+            top: 0;
+            transform: rotate(90deg);
+        }
+        &:checked ~ .header__nav {
+            visibility: visible;
+            left: 0;
+        }
+    }
+    .menu__btn {
+        position: fixed;
+        z-index: 2;
+        & > span,
+        & > span::before,
+        & > span::after {
+            transition-duration: .25s;
+        }
+    }
+}
