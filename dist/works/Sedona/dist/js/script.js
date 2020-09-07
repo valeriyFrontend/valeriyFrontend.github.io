@@ -1,48 +1,43 @@
-$('[data-toggle="datepicker"]').datepicker({
-    language: 'ru-RU',
-    format: 'dd/mm/yyyy',
-    weekStart: 1,
-    startView: 0,
-    yearFirst: true,
-});
+$( function() {
+    $( "#datepicker, #datepicker2" ).datepicker({
+        dateFormat: "dd MM yy"
+    });
+  } );
 
-//COUNTER
+  let buttonCountPlus = document.getElementById("buttonCountPlus");
+  let buttonCountMinus = document.getElementById("buttonCountMinus");
+  let count = document.getElementById("buttonCountNumber");
 
-let count = document.getElementById("buttonCountNumber");
-
-document.getElementById("buttonCountPlus").onclick = function() {
-  let countPlus = count.innerHTML;
-  if(+countPlus <= 50){
-    count.innerHTML++;
+  let buttonCountPlus2 = document.getElementById("buttonCountPlus2");
+  let buttonCountMinus2 = document.getElementById("buttonCountMinus2");
+  let count2 = document.getElementById("buttonCountNumber2");
+  let number = 1;
+  let number2 = 0;
+  
+  buttonCountPlus.onclick = function() {
+      if (number < 10) {
+          number++;
+          count.innerHTML = number;
+      }
+  };
+  
+  buttonCountMinus.onclick = function() {
+     if (number > 0) {
+         number--;
+         count.innerHTML = number;
+      }
   }
+
+  buttonCountPlus2.onclick = function() {
+    if (number2 < 10) {
+        number2++;
+        count2.innerHTML = number2;
+    }
+};
+
+buttonCountMinus2.onclick = function() {
+   if (number2 > 0) {
+       number2--;
+       count2.innerHTML = number2;
+    }
 }
-
-document.getElementById("buttonCountMinus").onclick = function() {
-  let countMinus = count.innerHTML;
-  if(+countMinus >= 2){
-    count.innerHTML--;
-    let countMinus = count.innerHTML;
-  }
-}
-
-
-let count2 = document.getElementById("buttonCountNumber2");
-
-document.getElementById("buttonCountPlus2").onclick = function() {
-  let countPlus2 = count2.innerHTML;
-  if(+countPlus2 <= 50){
-    count2.innerHTML++;
-    let countPlus2 = count2.innerHTML;
-  }
-}
-
-document.getElementById("buttonCountMinus2").onclick = function() {
-  let countMinus2 = count2.innerHTML;
-  if(+countMinus2 >= 2){
-    count2.innerHTML--;
-  }
-}
-
-//MASK 
-
-$('[data-toggle="datepicker"]').mask("99/99/9999");

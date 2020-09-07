@@ -4,41 +4,34 @@ function myFunction(imgs) {
     expandImg.parentElement.style.display = "block";
 }
 
+// Slick Slider
+
 $(document).ready(function(){
     $('.info__img').slick({
         prevArrow:'<button class="button slick-prev">НАЗАД</button>',
         nextArrow:'<button class="button slick-next">ВПЕРЕД</button>'
     });
-        // {
-        //     responsive: [
-        //         {
-        //             breakpoint: 480,
-        //             settings: {
-        //                 arrows: false,
-        //             }
-        //         }
-        //     ]
-        //   }
-    // $('.products__items, .manufacturers__items').slick({
-    //     responsive: [
-    //         {
-    //             breakpoint: 2048,
-    //             settings: "unslick"
-    //         },
-    //         {
-    //             breakpoint: 600,
-    //             settings: {
-    //                 slidesToShow: 2,
-    //                 slidesToScroll: 1
-    //             }
-    //         },
-    //         {
-    //             breakpoint: 480,
-    //             settings: {
-    //                 slidesToShow: 1,
-    //                 slidesToScroll: 1
-    //             }
-    //         }
-    //     ]
-    //   });
 });
+
+// Modal
+
+let modal = document.getElementById("my_modal");
+let btn = document.getElementById("btn_modal_window");
+let span = document.getElementsByClassName("close_modal_window")[0];
+
+btn.onclick = function () {
+   modal.style.display = "block";
+   document.body.style.overflow = 'hidden';
+}
+
+span.onclick = function () {
+   modal.style.display = "none";
+   document.body.style.overflow = 'auto';
+}
+
+window.onclick = function (event) {
+   if (event.target == modal) {
+       modal.style.display = "none";
+       document.body.style.overflow = 'auto';
+   }
+}
