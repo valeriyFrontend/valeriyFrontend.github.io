@@ -8,16 +8,16 @@
   },
   "author": "",
   "license": "ISC",
+  "type": "module",
   "devDependencies": {
     "browser-sync": "^2.26.5",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
     "gulp-clean-css": "^4.2.0",
-    "gulp-cli": "^2.2.0",
+    "gulp-cli": "^2.3.0",
     "gulp-htmlmin": "^5.0.1",
-    "gulp-imagemin": "^6.0.0",
     "gulp-rename": "^1.4.0",
-    "gulp-sass": "^4.0.2",
+    "gulp-sass": "^5.0.0",
     "slick-carousel": "^1.8.1"
   },
   "browserslist": [
@@ -26,5 +26,8 @@
     "maintained node versions",
     "not dead"
   ],
-  "dependencies": {}
+  "dependencies": {
+    "gulp-imagemin": "^7.1.0",
+    "node-sass": "^6.0.1"
+  }
 }
