@@ -1,24 +1,27 @@
-const addObserverIfDesiredNodeAvailable = () => {
+const options = {
+  attributes: true
+}
+
+function callback(mutationList, observer) {
   const element = document.querySelector('.modal--empty-title');
-  console.log(element)
   
-  const observer = new MutationObserver((mutations) => {
-    console.log(element, 1)
-    mutations.forEach((mutation) => {
-      if (mutation.type === 'childList') {
-        if (element) {
+  mutationList.forEach(function(mutation) {
+    if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+      if (element) {
           element.remove();
-        }
       }
-    });
-  });
+    }
+  })
+}
 
-  observer.observe(element);
-
-  // Disconnect the observer when it's no longer needed
-  window.addEventListener('beforeunload', () => {
-    observer.disconnect();
-  });
-};
+function addObserverIfDesiredNodeAvailable() {
+    const isPanelVisible = document.querySelector('.modal--empty-title');
+    if(!isPanelVisible) {
+        window.setTimeout(addObserverIfDesiredNodeAvailable,500);
+        return;
+    }
+    const observer = new MutationObserver(callback)
+    observer.observe(isPanelVisible, options)
+}
 
 addObserverIfDesiredNodeAvailable();
