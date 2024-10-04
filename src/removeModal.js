@@ -16,7 +16,9 @@ function callback(mutationList, observer) {
 }
 
 function addObserverIfDesiredNodeAvailable() {
+    console.log("addObserverIfDesiredNodeAvailable")
     const isPanelVisible = document.querySelector('.modal--empty-title');
+    console.log(isPanelVisible)
     if(!isPanelVisible) {
         window.setTimeout(addObserverIfDesiredNodeAvailable,500);
         return;
