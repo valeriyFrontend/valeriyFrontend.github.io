@@ -1,8 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
+  const element = document.querySelector('.modal--empty-title');
+  
   const observer = new MutationObserver((mutations) => {
     mutations.forEach((mutation) => {
       if (mutation.type === 'childList') {
-        const element = document.querySelector('.modal--empty-title');
         if (element) {
           element.remove();
         }
@@ -10,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  observer.observe(document.body, { childList: true, subtree: true });
+  observer.observe(element, { childList: true, subtree: true });
 
   // Disconnect the observer when it's no longer needed
   window.addEventListener('beforeunload', () => {
