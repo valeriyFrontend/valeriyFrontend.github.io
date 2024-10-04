@@ -4,6 +4,7 @@ const options = {
 
 function callback(mutationList, observer) {
   const element = document.querySelector('.modal--empty-title');
+  console.log(element)
   
   mutationList.forEach(function(mutation) {
     if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
