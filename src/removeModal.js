@@ -21,3 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     observer.disconnect();
   });
 });
+
+const element = document.querySelector('.modal--empty-title');
+
+console.log(element)
